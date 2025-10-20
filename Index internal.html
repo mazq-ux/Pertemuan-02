@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pembelajaran HTML dan CSS (Warna Merah)</title>
+    
+    <style> 
+
+        p { 
+            text-align: center; 
+            color: red; 
+        }
+
+
+        #para_id_contoh {
+            text-align: center;
+            color: red;
+        }
+
+
+        .center { 
+            text-align: center; 
+            color: red; 
+        } 
+        
+
+        p.red-center { 
+            text-align: center; 
+            color: red; 
+        } 
+    </style>
+</head>
+<body>
+ <h1> internal</h1>
+ <hr>
+
+    <h2>Seletor Elemen (Tag)</h2>
+    <p>Every paragraph will be affected by the style (MERAH).</p> 
+    <p id="paragraf_lain">Me too! (MERAH)</p> 
+    <p>And me! (MERAH)</p> 
+
+    <hr>
+    
+    <h2>Seletor ID (#)</h2>
+    <p id="para_id_contoh">Halo Dunia! Saya menggunakan **ID Selector** dan berwarna **MERAH**.</p>
+    <p>Paragraf ini tidak memiliki ID spesifik.</p>
+    
+    <hr>
+    
+    <h2> Seletor Kelas (.)</h2>
+    <h3 class="center">Heading ini menggunakan **kelas center** (MERAH).</h1> 
+    <p class="center">Paragraf ini juga menggunakan **kelas center** (MERAH).</p> 
+    
+    <hr>
+    
+    <h2> Seletor Kelas Tertentu (Tag.Kelas)</h2>
+    <h3
+     class="red-center">Heading ini tidak terpengaruh oleh p.red-center (hanya dipengaruhi oleh .center jika ada, tapi di sini tidak).</h1> 
+    <p class="red-center">Paragraf ini terpengaruh oleh **selector kelas tertentu (p.red-center)**, jadi berwarna **MERAH**.</p> 
+
+</body>
+</html>
